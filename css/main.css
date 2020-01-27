@@ -98,7 +98,7 @@ p{
 @media only screen and (min-width:768px){
   body{
     display: grid;
-    grid-template-columns 20% auto:
+    grid-template-columns: 20% auto;
     padding: 2em;
   }
 
@@ -109,5 +109,14 @@ p{
   aside{
     background: grey;
     grid-template-columns: auto;
+    grid-template-rows: 20% auto;
   }
+
+  main{
+  padding: 4em;
+  /* Image by Gordon Johnson from Pixabay */
+  /*background: white url(' ../images/brain_corner.svg') no-repeat bottom center;
+  background-size: 70%;*/
+  }
+
 }
