@@ -17,7 +17,8 @@
   padding: 20px;
   font-size: 150%;
 }
-img{
-    width: 200px;
-    border-radius: 5px
+
+.photosMy{
+    width: 250px;
+    border-radius: 5px;
 }

@@ -24,10 +24,12 @@ aside{
   padding: 2em;
 }
 
-img{
-  width: 40px;
-  cursor: pointer;
+/* img{ */
+.corner{
+    width: 40px;
+    cursor: pointer;
 }
+/* } */
 
 figure{
   margin: 0;
@@ -42,8 +44,7 @@ nav{
   background: white;
 }
 
-.active
-{
+.active{
   position: absolute;
   display: block;
   background: white;
@@ -82,6 +83,7 @@ p{
   font-size: 1.2em;
   line-height: 1.5em;
 }
+
 .cta{
   display: block;
   color: #fff;
@@ -102,8 +104,12 @@ p{
     padding: 2em;
   }
 
-  img{
-    display: none;
+  /* img{
+      display: none;
+  } */
+
+  .corner {
+      display: none;
   }
 
   aside{
