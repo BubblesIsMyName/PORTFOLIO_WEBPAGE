@@ -4,10 +4,11 @@
 
 .wrapper {
   display: grid;
-  grid-template-columns: 100px;
+  /* changed from absolute size to relative*/
+  grid-template-columns: 50% auto;
   grid-gap: 10px;
-  background-color: #fff;
-  color: #444;
+  /* background-color: #fff; */
+  /* color: #444; */
 }
 
 .box {
@@ -19,6 +20,7 @@
 }
 
 .photosMy{
-    width: 250px;
+    /* width: 250px; */
+    width: 100%;
     border-radius: 5px;
 }
