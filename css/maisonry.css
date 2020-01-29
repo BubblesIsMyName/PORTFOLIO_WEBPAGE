@@ -6,7 +6,7 @@
   display: grid;
   /* changed from absolute size to relative*/
   grid-template-columns: 50% auto;
-  grid-gap: 10px;
+  grid-gap: 5px;
   /* background-color: #fff; */
   /* color: #444; */
 }
