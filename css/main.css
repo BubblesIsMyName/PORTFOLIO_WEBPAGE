@@ -24,10 +24,12 @@ aside{
   padding: 2em;
 }
 
-img{
-  width: 40px;
-  cursor: pointer;
+/* img{ */
+.corner{
+    width: 40px;
+    cursor: pointer;
 }
+/* } */
 
 figure{
   margin: 0;
@@ -42,8 +44,7 @@ nav{
   background: white;
 }
 
-.active
-{
+.active{
   position: absolute;
   display: block;
   background: white;
@@ -82,6 +83,8 @@ p{
   font-size: 1.2em;
   line-height: 1.5em;
 }
+
+/* Contact button */
 .cta{
   display: block;
   color: #fff;
@@ -99,17 +102,45 @@ p{
   body{
     display: grid;
     grid-template-columns: 20% auto;
+    /* grid-gap: 10px; */
     padding: 2em;
   }
 
-  img{
-    display: none;
+  /* img{
+      display: none;
+  } */
+
+  .corner {
+      display: none;
   }
 
   aside{
     background: grey;
     grid-template-columns: auto;
-    grid-template-rows: 20% auto;
+    grid-auto-rows: 10% auto;
+    padding: 0;
+  }
+
+  /* Decide of you want to use the avatar !!*/
+
+  main{
+      padding: 4em;
+      background: white:
+  }
+
+  figcaption{
+      margin: 0.5em;
+      text-align: center;
+  }
+
+  ul{
+      /* allows to display the list */
+      display: block;
+      margin-top: 2em;
+      /* e.g. if the phone is flipped into landscape mode
+      will allow for the  css formating to remain correct
+      for the screen size*/
+      position: relative !important;
   }
 
   main{
