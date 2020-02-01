@@ -26,8 +26,8 @@ aside{
 
 /* img{ */
 .corner{
-    width: 40px;
-    cursor: pointer;
+  width: 40px;
+  cursor: pointer;
 }
 /* } */
 
@@ -41,7 +41,7 @@ figcaption{
 }
 
 nav{
-  background: white;
+  background: none;
 }
 
 .active{
@@ -100,25 +100,23 @@ p{
 
 @media only screen and (min-width:768px){
   body{
-    display: grid;
-    grid-template-columns: 20% auto;
-    /* grid-gap: 10px; */
-    padding: 2em;
+      display: grid;
+      grid-template-columns: 20% auto;
+      /* grid-gap: 10px; */
+      padding: 2em;
   }
-
-  /* img{
-      display: none;
-  } */
 
   .corner {
       display: none;
   }
 
   aside{
-    background: grey;
-    grid-template-columns: auto;
-    grid-auto-rows: 10% auto;
-    padding: 0;
+      background: grey;
+      grid-template-columns: auto;
+      /* Sizing of rows, first contains avatar div
+      questin should i keep it?? */
+      grid-template-rows:20% auto;
+      padding: 0;
   }
 
   /* Decide of you want to use the avatar !!*/
@@ -126,6 +124,19 @@ p{
   main{
       padding: 4em;
       background: white:
+      /* Image by Gordon Johnson from Pixabay */
+      /*background: white url(' ../images/brain_corner.svg') no-repeat bottom center;
+      background-size: 70%;*/
+  }
+
+  #avatar{
+      /*This makes the border a circle */
+      border-radius: 50%;
+      background-color: black;
+      width: 50px;
+      height: 50px;
+      /* top righ bottom left */
+      margin: 2em auto 1em auto;
   }
 
   figcaption{
@@ -139,15 +150,32 @@ p{
       margin-top: 2em;
       /* e.g. if the phone is flipped into landscape mode
       will allow for the  css formating to remain correct
-      for the screen size*/
+      for the screen size
+
+      Important flag helps overwrite the absolute style
+      in the .active class*/
       position: relative !important;
+      background: none !important;
+      width: 100% !important;
   }
 
-  main{
-  padding: 4em;
-  /* Image by Gordon Johnson from Pixabay */
-  /*background: white url(' ../images/brain_corner.svg') no-repeat bottom center;
-  background-size: 70%;*/
+/* using seudo class hover allows to have a hover animation */
+  ul li a:hover{
+    background-color: white;
   }
 
+  .cta{
+    display: inline-block;
+    font-size: 1.3em;
+    padding: 0.3em 3em;
+  }
+
+  h1{
+    font-size: 3em;
+    margin-top: 2em;
+  }
+
+  p{
+    font-size: 1.5em; 
+  }
 }
